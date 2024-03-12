@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300&family=Poppins:wght@200;300&family=Ubuntu:wght@300&display=swap');
+
+.form-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.6)),url("../assets/formBackground.jpg");
+    background-size: cover;
+    background-position: center;
+}
+form{
+    width: 450px;
+    height: 450px;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    background-color: #ffffff1c;
+    backdrop-filter: blur(5px);
+}
+form .heading{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    padding-top: 20px;
+    font-family: 'poppins';
+    letter-spacing: 4px;
+}
+form .input-box{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.input-box input{
+    width: 80%;
+    height: 45px;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 1px solid;
+    font-family: 'poppins';
+}
+.input-box input::placeholder{
+    color: #fff;
+}
+.input-box button{
+    width: 130px;
+    height: 40px;
+    border: 0;
+    background-color: rgb(74, 74, 182);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50px;
+    font-family: 'poppins';
+}
+.input-box .error{
+    color: rgb(255, 90, 90);
+    font-size: 18px;
+    position: absolute;
+    left: 45px;
+}
+.input-box .name-error{
+    top: 50px;
+}
+.input-box .email-error{
+    top: 122px;
+}
+.input-box .password-error{
+    top: 194px;
+}
+.input-box .cnf-password-error{
+    top: 266px;
+}
